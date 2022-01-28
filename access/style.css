@@ -1,0 +1,339 @@
+html{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: 0;
+}
+body{
+    overflow-x: hidden;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+}
+/* header */
+#header{
+    width: 100%;
+    height: 115px;
+    border-bottom: solid rgba(0,0,0,0.1);
+    position:fixed;
+    top:0px;
+    left: 0px;
+    z-index: 10;
+    background-color: white;
+}
+#header .nav__header{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,0.1);
+    position: relative;
+}
+#header .nav__header ul{
+    display: inline-flex;
+    list-style-type: none;
+    position: absolute;
+    right: 7%;
+    margin: 0px;
+}
+.nav__header ul li{
+    margin-right: 20px;
+    line-height: 40px;
+}
+#header .menu{
+    width: 100%;
+    height: 75px;
+    display: flex;
+}
+#header .menu #logo{
+    width: 104px;
+    height: 52px;
+    margin: 10px;
+    margin-left: 100px;
+}
+#header .menu ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+#header .menu ul li{
+    margin-left: 30px;
+    line-height: 50px;
+    font-weight: bold;
+}
+#header .menu__right{
+    width: fit-content;
+    height: fit-content;
+    display: inline-flex;
+    position: absolute;
+    right: 7%;
+    margin: 17px;
+}
+#header .menu__right input{
+    height: 35px;
+    width: 250px;
+}
+#header .menu__right span{
+    margin-left: 30px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+/* body */
+#body{
+    width: 100%;
+    height: fit-content;
+}
+#body .slider{
+    width: 100%;
+    height:730px;
+    margin-top: 115px;
+}
+#body .slider .slider__item{
+    width: 86%;
+    height: fit-content;
+    position: relative;
+    left: 7%;
+    top:30px;
+}
+.slider .slider__item img{
+    width: 100%;
+    height: fit-content;
+}
+.slider .slider__item .btn__left{
+    position: absolute;
+    top:37%;
+    left: 0px;
+    width: 60px;
+    background-color: rgba(0,0,0,0.1);
+    height: 100px;
+    font-size: 30px;
+    z-index: 5;
+    border: 0px;
+}
+.slider .slider__item .btn__right{
+    position: absolute;
+    top:37%;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.1);
+    right: 0px;
+    width: 60px;
+    height: 100px;
+    z-index: 5;
+    border: 0px;
+}
+.slider .slider__item .list__btn__change{
+    display: inline-flex;
+    position: absolute;
+    left: 43%;
+    bottom: -20px;
+}
+
+.slider .slider__item .list__btn__change button{
+background-color: rgba(0,0,0,0);
+border: 0px;
+border: 50%;
+}
+.slider .slider__item .list__btn__change button:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+/* banner */
+#body .banner{
+    width: 100%;
+    height: 280px;
+    position: relative;
+}
+#body .banner img{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+    left: 7%;
+    width: 86%;
+    height: 220px;
+}
+/* topic */
+#body .topic{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    position:relative;
+    flex-direction: column;
+}
+.topic .topic__header{
+    width: 100%;
+    height: 90px;
+    position: relative;
+}
+#body .topic .topic__header h1{
+    position: absolute;
+    left: 7%;
+    font-size: 40px;
+}
+.topic .topic__item{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+.topic .item1{
+    display: flex;
+    flex-flow: wrap;
+}
+.topic .item1 img{
+    width: 200px;
+    height: 200px;
+    margin-left: 7%;
+    margin-right: 10px;
+}
+.topic .item2{
+    display: flex;
+    flex-flow: wrap;
+}
+.topic .item2 img{
+    width: 200px;
+    height: 200px;
+    margin-left: 7%;
+    margin-right: 10px;
+}
+/* catelory */
+.catelory{
+    width: 100%;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.catelory .catelory__item{
+    flex: 1;
+}
+.catelory .catelory__item ul{
+    list-style-type: none;
+}
+.catelory .catelory__item ul h3{
+   margin-left: 50px;
+}
+.catelory .catelory__item ul li{
+    display: inline-flex;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.catelory .item1{
+    margin-left: 7%;
+}
+.catelory .item4{
+    margin-right: 7%;
+}
+.catelory .item2{
+    border-left: solid rgba(0,0,0,0.1);
+    border-right: solid rgba(0,0,0,0.1);
+}
+.catelory .item3{
+    border-right: solid rgba(0,0,0,0.1);
+}
+/* clothing */
+.clothing{
+    width: 100%;
+    height: 1600px;
+    display: flex;
+    flex-flow: wrap;
+}
+.clothing .clothing__header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.clothing .clothing__header h1{
+    font-size: 40px;
+    position: absolute;
+    left: 7%;
+}
+.clothing .clothing__header h1:hover{
+    text-decoration: underline;
+}
+.clothing .clothing__item{
+    width:640px;
+    height: 750px;
+}
+.clothing .clothing__item img{
+    width: 620px;
+    height: 620px;
+}
+.clothing .item1{
+    margin-left: 7%;
+}
+.clothing .item2{
+    margin-left: 20px;
+}
+.clothing .item3{
+    margin-left: 7%;
+}
+.clothing .item4{
+    margin-left: 20px;
+}
+/* life__wear */
+.life__wear{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.life__wear .life__slide{
+    width: 86%;
+    height: 300px;
+    position: absolute;
+    top:10px;
+    left: 7%;
+    background-color:rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-evenly;
+}
+.life__slide .life__wear__item{
+    flex: 1;
+}
+.life__slide .life__wear__item img{
+    width: 300px;
+    height: 300px;
+}
+.life__wear .btn__left{
+    position: absolute;
+    left: 7%;
+    top:125px;
+    width: 40;
+    height: 60px;
+    background-color:rgba(0,0,0,0.2);
+    z-index: 5;
+    border: 0;
+}
+.life__wear .btn__left:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.life__wear .btn__right:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.life__wear .btn__right{
+    position: absolute;
+    right: 7%;
+    top:125px;
+    z-index: 5;
+    width: 40;
+    height: 60px;
+    border: 0;
+    background-color:rgba(0,0,0,0.2);
+}
+#footer{
+    width: 100%;
+    height:400px ;
+    background-color:rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer .footer__item{
+    flex:1;
+}
+#footer .footer__item ul{
+    list-style-type: none;
+}
+#footer .footer__item ul li{
+    line-height: 40px;
+}
+#footer .footer__item ul li:hover{
+    text-decoration: underline;
+}
+#footer .item1{
+    margin-left: 7%;
+}
+#footer .item5{
+    margin-right: 7%;
+}
